@@ -102,7 +102,7 @@ logoutButton.addEventListener('click', () => {
     logout();
 });
 
- // on load . . .
+    // on load . . .
 window.addEventListener('load', async(e) => {
     e.preventDefault();
     // fetch all games
