@@ -12,7 +12,7 @@ export async function createGame(game){
 
     // create a single new game in the games table using the above object
     
-    // return checkError(response);
+    return checkError(response);
 }
 
 

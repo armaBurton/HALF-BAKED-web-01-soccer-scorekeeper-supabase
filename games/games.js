@@ -85,7 +85,8 @@ finishGameButton.addEventListener('click', async() => {
     // re-fetch the games to get the updated state
     const allGames = await getGames();
     
-    setTimeout(displayAllGames(allGames), 500);
+    // setTimeout(displayAllGames(allGames), 500);
+    displayAllGames(allGames);
 
     // reassign the past games state to the re-fetched, updated games
     // displayAllGames();
@@ -95,7 +96,6 @@ finishGameButton.addEventListener('click', async() => {
     currentGame.name2 = '';
     currentGame.score1 = 0;
     currentGame.score2 = 0;
-    // displayAllGames(allGames);
     displayCurrentGameEl();
 });
 
