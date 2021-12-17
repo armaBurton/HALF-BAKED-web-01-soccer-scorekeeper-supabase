@@ -81,7 +81,7 @@ finishGameButton.addEventListener('click', async() => {
    
     
     // create a new game using the current game state
-    const thisGame = await createGame(currentGame);
+    await createGame(currentGame);
     // re-fetch the games to get the updated state
     const allGames = await getGames();
 
