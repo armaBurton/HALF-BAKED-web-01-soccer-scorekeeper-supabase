@@ -81,10 +81,11 @@ finishGameButton.addEventListener('click', async() => {
    
     
     // create a new game using the current game state
-    const thisGame = createGame(currentGame);
+    const thisGame = await createGame(currentGame);
     // re-fetch the games to get the updated state
     const allGames = await getGames();
-    displayAllGames(allGames);
+
+    // setTimeout(displayAllGames(allGames), 300);
 
     // reassign the past games state to the re-fetched, updated games
     // displayAllGames();
@@ -94,7 +95,7 @@ finishGameButton.addEventListener('click', async() => {
     currentGame.name2 = '';
     currentGame.score1 = 0;
     currentGame.score2 = 0;
-    
+    displayAllGames(allGames);
     displayCurrentGameEl();
 });
 

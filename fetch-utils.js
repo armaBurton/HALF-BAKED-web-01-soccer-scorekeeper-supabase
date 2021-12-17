@@ -5,7 +5,7 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function createGame(game){
     const newGame = { ...game };
-
+    console.log(newGame);
     const response = await client
         .from(`games`)
         .insert(newGame);
