@@ -25,7 +25,7 @@ signUpForm.addEventListener('submit', async(event)=>{
         console.error(user);
         const data = new FormData(signUpForm);
         const email = data.get(`email`);
-        const password = data.get(`password`)
+        const password = data.get(`password`);
 
         // console.log(email, password);
     }
